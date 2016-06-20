@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">BOX OF DOOM</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="ok_button">OK</string>
+    <string name="save_button">Save</string>
+
+    <string name="authentication_screen_enter">Enter the Box Of Doom</string>
+    <string name="authentication_screen_exit">Exit the Box Of Doom</string>
+
+    <string name="plain_screen_noti">There is nothing to display.</string>
+
+    <string name="list_open_function">View</string>
+    <string name="list_download_function">Download</string>
+    <string name="list_rename_function">Rename</string>
+    <string name="list_move_function">Move</string>
+    <string name="list_delete_function">Delete</string>
+
+    <string name="file_explorer_dialog_title">Choose an item</string>
+
+    <string name="rename_dialog_title">Rename</string>
+    <string name="rename_instruction">Please type the new name here.</string>
+
+    <string name="delete_dialog_title">Delete</string>
+    <string name="delete_confirmation">Are you sure you want to delete?</string>
+
+
+    <string name="icon_list_view">&#xf00b;</string>
+    <string name="icon_grid_view">&#xf00a;</string>
+
+    <string name="icon_file">&#xf15b;</string>
+    <string name="icon_file_text">&#xf15c;</string>
+    <string name="icon_folder_open">&#xf07c;</string>
+    <string name="icon_folder_closed">&#xf114;</string>
+    <string name="icon_file_white">&#xf016;</string>
+    <string name="icon_img">&#xf1c5;</string>
+    <string name="icon_file_powerpoint">&#xf1c4;</string>
+    <string name="icon_file_word">&#xf1c2;</string>
+    <string name="icon_file_archive">&#xf1c6;</string>
+    <string name="icon_file_excel">&#xf1c3;</string>
+    <string name="icon_file_pdf">&#xf1c1;</string>
+
+    <string name="icon_plus">&#xf055;</string>
+    <string name="icon_go_back">&#xf190;</string>
+    <string name="icon_upload">&#xf093;</string>
+    <string name="icon_setting">&#xf085;</string>
+
+
+</resources>

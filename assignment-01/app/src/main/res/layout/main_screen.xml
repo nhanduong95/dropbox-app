@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The main view to interact with the files and folders -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!--Custom title Bar-->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@color/darkBlue">
+
+        <!-- Go back icon -->
+        <TextView
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/icon_go_back"
+            android:textSize="@dimen/main_screen_icon_size"
+            android:textColor="@color/lighterBlue"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <!-- Name of the app -->
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/go_back"
+            android:text="@string/app_name"
+            android:textColor="@color/nearlyWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/main_screen_big_txt_size"
+            android:textAllCaps="true"/>
+
+        <!-- Upload icon -->
+        <TextView
+            android:id="@+id/upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/lighterBlue"
+            android:text="@string/icon_upload"
+            android:textSize="@dimen/main_screen_icon_size"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <!-- List View Mode icon-->
+        <TextView
+            android:id="@+id/list_view_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/upload"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/lighterBlue"
+            android:text="@string/icon_list_view"
+            android:textSize="@dimen/main_screen_icon_size"
+            android:gravity="center"
+            android:clickable="true"/>
+
+        <!-- Grid View Mode icon -->
+        <TextView
+            android:id="@+id/grid_view_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/list_view_display"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/lighterBlue"
+            android:text="@string/icon_grid_view"
+            android:textSize="@dimen/main_screen_icon_size"
+            android:gravity="center"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <!-- View to display the files and folders.
+    Either ListView or GridView will be chosen to appear in the code -->
+    <ListView
+        android:id="@+id/a_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"/>
+    <GridView
+        android:id="@+id/a_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:numColumns="auto_fit" />
+    <LinearLayout
+        android:id="@+id/plain_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plain_screen_noti"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="@android:color/darker_gray"
+            android:typeface="monospace"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Exit button -->
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="end"
+        android:padding="15dp"
+        android:background="@color/likeCrimson"
+        android:textSize="@dimen/main_screen_big_txt_size"
+        android:textColor="@color/veryLightRed"
+        android:text="@string/authentication_screen_exit" />
+</LinearLayout>

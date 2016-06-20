@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Display of an item in the List View mode.
+This view will be populated to the main view of the app - main_screenshow how an item in a List View mode appears -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="@color/lighterBlue"
+    android:layout_marginBottom="5dp">
+
+    <!-- Display of an item icon.
+    What icon will appear depends on the type of the item (file or folder) -->
+    <TextView
+        android:id="@+id/list_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:paddingTop="10dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="10dp"/>
+
+    <!-- Display of an item name. -->
+    <TextView
+        android:id="@+id/list_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/list_item_icon"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/darkerBlue"
+        android:typeface="monospace"
+        android:textSize="@dimen/main_screen_small_txt_size" />
+
+    <!-- This is where the user clicks to
+    open a list of functions to interact with the chosen item. -->
+    <TextView
+        android:id="@+id/plus_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:text="@string/icon_plus"
+        android:textSize="30sp"
+        android:textColor="@color/lightGrayBlue"
+        android:gravity="center_horizontal"/>
+</RelativeLayout>

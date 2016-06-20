@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lighterBlue">
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/nearlyWhite"
+        android:textAlignment="center"
+        android:background="@color/darkerBlue"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/text_editor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="750dp"
+        android:minHeight="150dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/white"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/cancel_button"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/lightYellowGreen"
+            android:background="@color/green"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/edit_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/save_button"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textColor="@color/veryLightRed"
+            android:background="@color/likeCrimson"
+            android:layout_weight="0.5"/>
+    </LinearLayout>
+</LinearLayout>
